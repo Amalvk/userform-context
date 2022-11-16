@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    /*Defining variable,root accessible*/
+    --success-color:#2ecc71;
+    --error-color: #e74c3c;
+}
+
+
+*{
+    box-sizing: border-box; 
+  /*Link - https://jsbin.com/pugenef/1/edit?html,css,output */
+}
+
+
+body{
+    background-color: #72aee9 !important;
+    font-family: 'Opens Sans',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    margin: 0;
+    color: #72aee9;
+}
+
+.container{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    width:400px;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    
+}
+
+h5{
+    text-align: center;
+    margin:0 0 20px;
+    font-weight: bold !important;
+}
+
+img{
+    align-items: center !important ;
+    justify-content: center !important;
+    height: 10%;
+    width: 15em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+
+}
+
+.form{
+    padding: 30px 40px;
+}
+
+.form-control{
+    padding-bottom: 20px;
+    position: relative;
+    border: none !important;
+
+}
+
+.form-control label{
+    color:rgb(17, 3, 3);
+    display: block;
+    margin-bottom:5px;
+
+}
+
+.form-control input{
+    border:2px solid #e6d7d7;
+    background-color: #dfcfcf;
+    border-radius: 4px;
+    display: block;
+    width:100%;
+    padding: 10px;
+    font-size:14px;
+}
+select{
+    border:2px solid #e6d7d7;
+    background-color: #dfcfcf;
+    border-radius: 4px;
+    display: block;
+    width:100% !important;
+    padding: 10px;
+    border-color:#e6d7d7 ;
+    font-size:14px;
+}
+
+.form-control select:focus{
+    outline: 0;
+    border-color: #e6d7d7;
+
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+
+}
+
+
+.form-control.success input{
+    border-color: var(--success-color);
+}
+
+
+.form-control.error input{
+    border-color: var(--error-color);
+}
+
+.form-control small{
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    /*visibility: hidden; = simply hides it whereas Display:none = collapse the content*/
+}
+
+.form-control.error small{
+    visibility: visible;
+}
+
+.form button{
+    cursor: pointer;
+    background-color: #969302;
+    border-radius:6px;
+    color:#fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border:none;
+}
+
+button{
+    cursor: pointer;
+    background-color: #3a3a34;
+    border-radius:6px !important;
+    color:#fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 1em !important;
+    width: 20%;
+    border:none;
+}
+
+
+.user-name{
+    display: flex;
+    margin: 3px;
+    padding: 4px;
+}
+
+.label-name{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: bold;
+    color: rgb(148, 118, 118) !important;
+
+}
+
+.input-label{
+    color: black !important;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 4px;
+    
+
+
+}
+
+.label-name{
+    text-align: left;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: bold;
+    color: rgb(148, 118, 118) !important;
+
+}
